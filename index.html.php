@@ -168,10 +168,80 @@
       <a href="#about">À propos</a>
       <a href="#contact">Contact</a>
     </nav>
-   <a href="tel:+33753696428" class="phone-box">
+   <!-- 📞 Bouton d'appel flottant -->
+<a href="tel:+33753696428" class="phone-box">
   <i class="fa-solid fa-phone"></i>
   <span>07 53 69 64 28</span>
 </a>
+
+<style>
+  /* ---- Bouton Téléphone ---- */
+  .phone-box {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #ffcc55, #ffcc55);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    animation: pulse 1.8s infinite;
+  }
+
+  .phone-box i {
+    font-size: 1.3em;
+    background: #fff;
+    color: #ffcc55;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .phone-box:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #ffcc55 #ffcc55);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Animation "pulsation" */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 #ffdc8b;
+    }
+    70% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 15px rgba(40, 167, 69, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+  }
+
+  /* Version mobile (centré en bas) */
+  @media (max-width: 768px) {
+    .phone-box {
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%);
+      font-size: 1em;
+      padding: 12px 18px;
+    }
+  }
+</style>
+
+<!-- N'oublie pas d’ajouter Font Awesome dans ton <head> si ce n’est pas déjà fait -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 <!-- ✅ Font Awesome pour l’icône -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -359,27 +429,235 @@ body {
   }
 }
 </style>
+<!-- ================== SECTION PRESTATIONS STYLE PRO abdi men hne================== -->
+<section id="prestations" class="prestations">
+  <div class="container">
 
+    <!-- Colonne gauche -->
+    <div class="content-left">
+      <h1>Débouchage Canalisation : Paris et Île-de-France</h1>
+      <p>
+        Fort de plus de <strong>25 ans d’expérience</strong>, nous intervenons rapidement chez vous pour déboucher toutes vos canalisations bouchées.
+        La demande étant souvent urgente, nous faisons tout notre possible pour vous dépanner rapidement à Paris et dans toute la région Île-de-France.
+      </p>
 
- <!-- ABOUT -->
-<section id="about" class="about">
-  <h2>À propos de nous</h2>
-  <p>
-    Depuis plus de <strong>10 ans</strong>, <strong>Débouchage IDF</strong> met son expertise au service des particuliers, 
-    des entreprises et des collectivités pour tous les travaux de débouchage, curage et entretien de canalisations.  
-  </p>
-  <p>
-    Notre équipe de techniciens qualifiés intervient dans toute l’Île-de-France avec du matériel de dernière génération, 
-    garantissant des interventions rapides, efficaces et sans dégâts.  
-  </p>
-  <p>
-    Nous nous engageons à offrir un service <strong>transparent, propre et durable</strong>, avec un diagnostic précis 
-    et des solutions adaptées à chaque situation.  
-    <br>Notre priorité : la satisfaction et la tranquillité de nos clients.
-  </p>
+      <p>
+        Appelez-nous au <strong>07 53 69 64 28 </strong> pour le débouchage de vos canalisations, fosses septiques ou égouts,
+        24h/24 et 7j/7. Nous convenons d’un rendez-vous et intervenons à votre convenance, dans un délai maximal d’une heure !
+      </p>
+
+      <p>
+        Notre objectif est que vous retrouviez l’usage de vos sanitaires rapidement et durablement.
+      </p>
+
+      <h2>Nos prestations : <span>Particuliers, Professionnels, Industries</span></h2>
+
+      <p>
+        Nous réalisons tous vos <strong>travaux de débouchage de canalisations</strong>, d’égouts, de vidange de fosse septique
+        et d’assainissement, ainsi que le curage de fosses et l’entretien complet de vos installations.
+      </p>
+
+      <ul>
+        <li> Débouchage WC, lavabo, évier, douche et baignoire</li>
+        <li> Curage et détartrage des canalisations</li>
+        <li> Vidange et pompage de fosses septiques</li>
+        <li> Inspection caméra et diagnostic sans casse</li>
+        <li> Dégorgement et nettoyage haute pression</li>
+        <li> Réparation et entretien préventif</li>
+      </ul>
+
+      <h3>Curage, Assainissement et Dégorgement de Canalisations</h3>
+      <p>
+        Notre équipe réalise le <strong>curage complet de vos réseaux d’assainissement</strong> et le dégorgement des canalisations
+        d’eau usée ou pluviale. Nous disposons de camions hydrocureurs haute pression pour des interventions efficaces et rapides.
+      </p>
+
+      <h3>Des conseils personnalisés pour l'entretien de vos canalisations</h3>
+      <p>
+        Pour éviter les bouchons, versez régulièrement de l’eau chaude mélangée à du vinaigre blanc dans vos conduits.
+        Évitez de jeter lingettes, graisses et déchets solides.  
+        Nous pouvons également vous proposer un <strong>contrat d’entretien annuel</strong> pour garantir le bon fonctionnement de vos installations.
+      </p>
+
+      <h3>FAQ – IDF Débouchage Canalisations Paris & Île-de-France</h3>
+      <p><strong>➡️ En combien de temps intervenez-vous ?</strong><br>
+      En moyenne sous 30 minutes, 24h/24 et 7j/7, selon votre localisation.</p>
+
+      <p><strong>➡️ Quels sont vos tarifs ?</strong><br>
+      Nos prix sont transparents et fixés selon la nature du bouchon. Devis gratuit sur simple appel.</p>
+
+      <p><strong>➡️ Intervenez-vous les week-ends ?</strong><br>
+      Oui, nos équipes sont disponibles tous les jours, y compris les jours fériés.</p>
+
+      <p><strong>➡️ Proposez-vous un service d’urgence ?</strong><br>
+      Oui, nous assurons une astreinte pour toutes les urgences plomberie à Paris et en Île-de-France.</p>
+    </div>
+
+    <!-- Colonne droite -->
+    <aside class="contact-box">
+      <div class="contact-header">📞 On vous rappelle</div>
+      <p>Laissez-nous votre numéro de téléphone, un conseiller vous rappellera rapidement.</p>
+
+      <form>
+        <label>Nom :</label>
+        <input type="text" placeholder="Votre nom">
+        <label>Téléphone :</label>
+        <input type="tel" placeholder="N° de téléphone sans espace">
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div class="info-box">
+        <h4>Débouchage de canalisations en Île-de-France</h4>
+        <p>
+          Notre entreprise, experte en plomberie, propose une large gamme de services :
+          débouchage, curage, assainissement, nettoyage et vidange de fosses septiques.
+        </p>
+        <p>Intervention dans les départements : 75, 77, 78, 91, 92, 93, 94 et 95.</p>
+      </div>
+    </aside>
+
+  </div>
 </section>
 
+<!-- ================== STYLE CSS et hne zada ================== -->
 <style>
+  .prestations {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.7;
+    background: #fff;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    gap: 30px;
+  }
+  .content-left {
+    flex: 2;
+    min-width: 300px;
+  }
+  .contact-box {
+    flex: 1;
+    min-width: 280px;
+    background: #f9f9f9;
+    border: 1px solid #d7e3ee;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  h1, h2, h3 {
+    color: rgb(194, 133, 0);
+  }
+  h1 { font-size: 2em; margin-bottom: 15px; }
+  h2 { font-size: 1.5em; margin-top: 25px; }
+  h3 { font-size: 1.3em; margin-top: 25px; }
+  ul { padding-left: 20px; }
+  ul li { margin-bottom: 8px; color: rgb(194, 133, 0); font-weight: 500; }
+  strong { color: rgb(194, 133, 0); }
+
+  .contact-header {
+    background: #e3f2fb;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .contact-box input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  .contact-box button {
+    background: rgb(194, 133, 0);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .contact-box button:hover { background: rgb(194, 133, 0); }
+  .info-box h4 {
+    color: rgb(194, 133, 0);
+    margin-top: 15px;
+  }
+  @media (max-width: 900px) {
+    .container { flex-direction: column; }
+    .contact-box { order: -1; }
+  }
+</style>
+
+
+ <!-- ================== SECTION POURQUOI NOUS CHOISIR ================== -->
+<section id="why-choose" style="background:#f9f9f9; padding:70px 20px;">
+  <div style="max-width:1200px; margin:auto; text-align:center;">
+    <h2 style="font-size:2.6em; color:rgb(194, 133, 0); margin-bottom:20px;">Pourquoi choisir <strong>Débouchage IDF</strong> ?</h2>
+    <p style="max-width:850px; margin:auto; font-size:1.1em; color:#555; margin-bottom:50px;">
+      Parce que nous savons qu’une canalisation bouchée est une urgence, notre équipe met tout en œuvre pour intervenir rapidement, proprement et efficacement.  
+      Découvrez ce qui fait de <strong>Débouchage IDF</strong> la référence en Île-de-France 👇
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px;">
+
+      <!-- Bloc 1 -->
+      <div style="background:white; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:340px; overflow:hidden; text-align:left;">
+        <img src="https://www.gmtp34.com/images/stories/blog/hydrocurage.jpg" alt="Hydrocurage professionnel" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:20px;">
+          <h3 style="color:rgb(194, 133, 0);">🔧 Expertise et professionnalisme</h3>
+          <p style="color:#555; font-size:0.95em;">Nos techniciens qualifiés sont formés aux dernières techniques de débouchage et de curage, garantissant un service durable et sans dégâts.</p>
+        </div>
+      </div>
+
+      <!-- Bloc 2 -->
+      <div style="background:white; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:340px; overflow:hidden; text-align:left;">
+        <img src="https://www.mestravaux.com/wp/wp-content/uploads/2021/04/debouchage-de-canalisation.png" alt="Débouchage canalisation" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:20px;">
+          <h3 style="color:rgb(194, 133, 0);">🚨 Intervention rapide 24h/24</h3>
+          <p style="color:#555; font-size:0.95em;">Nous intervenons en moins de 30 minutes dans toute l’Île-de-France, 7j/7, y compris les jours fériés.</p>
+        </div>
+      </div>
+
+      <!-- Bloc 3 -->
+      <div style="background:white; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:340px; overflow:hidden; text-align:left;">
+        <img src="https://www.jp-assainissement.com/sites/3806cw1121/files/actualites/img_10831_r1.jpg" alt="Entretien de canalisations" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:20px;">
+          <h3 style="color:rgb(194, 133, 0);">💧 Satisfaction garantie</h3>
+          <p style="color:#555; font-size:0.95em;">Nos clients nous choisissent pour notre transparence, notre efficacité et notre accompagnement personnalisé avant et après intervention.</p>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<!-- Optionnel : Effet au survol des blocs -->
+<style>
+  #why-choose div[style*="box-shadow"] {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #why-choose div[style*="box-shadow"]:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  }
+  #why-choose a:hover {
+    background:rgb(194, 133, 0);
+  }
+</style>
+
+
+<style>
+    /* --- 7atta le hne --- */
+
 /* --- SECTION ABOUT --- */
 .about {
   background: linear-gradient(to right, #f9fbff, #eef5ff);
@@ -391,7 +669,7 @@ body {
 
 .about h2 {
   font-size: 2.2rem;
-  color: #cab995ff;
+  color: rgb(194, 133, 0);
   margin-bottom: 30px;
   position: relative;
   display: inline-block;
@@ -403,7 +681,7 @@ body {
   position: absolute;
   width: 60%;
   height: 3px;
-  background: #cab995ff;
+  background: rgb(194, 133, 0);
   bottom: -10px;
   left: 20%;
   border-radius: 3px;
@@ -419,7 +697,7 @@ body {
 }
 
 .about strong {
-  color: #f9e07aff;
+  color: rgb(194, 133, 0);
 }
 
 /* --- ANIMATIONS --- */
